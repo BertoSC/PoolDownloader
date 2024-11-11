@@ -45,7 +45,7 @@ public class RunnableDownloader implements Runnable{
         try {
             url = new URL(link);
             InputStream in = url.openStream();
-            File outputFile = new File("animal" + numberFile + ".jpg");
+            File outputFile = new File("src/main/resources/results/"+ "animal" + numberFile + ".jpg");
 
             try (FileOutputStream fos = new FileOutputStream(outputFile)) {
                 byte[] buffer = new byte[1024];
